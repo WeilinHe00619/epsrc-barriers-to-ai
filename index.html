@@ -20,14 +20,14 @@
 </head>
 <body class="bg-gray-50 text-gray-900 leading-relaxed">
 
-    <!-- 1. Navigation (Updated) -->
+    <!-- 1. 导航栏 -->
     <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50 border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <div class="w-8 h-8 bg-uob-red rounded-lg flex items-center justify-center text-white font-bold text-sm">AI</div>
                 <span class="font-bold text-xl tracking-tight hidden sm:block">AI Barriers Project</span>
             </div>
-            <!-- Nav Links -->
+            <!-- 导航链接 -->
             <div class="hidden lg:flex space-x-8 text-sm font-semibold text-gray-600">
                 <a href="index.html" class="text-uob-red border-b-2 border-uob-red pb-1">Home</a>
                 <a href="literature.html" class="hover:text-red-600 transition">Literature Review</a>
@@ -40,7 +40,7 @@
         </div>
     </nav>
 
-    <!-- 2. Hero Section -->
+    <!-- 2. Hero 区域 -->
     <header id="home" class="relative pt-44 pb-28 px-6 overflow-hidden">
         <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-red-100 via-transparent to-transparent opacity-60"></div>
         <div class="max-w-5xl mx-auto text-center">
@@ -65,11 +65,11 @@
         </div>
     </header>
 
-    <!-- 3. Project Overview -->
+    <!-- 3. 项目概览 -->
     <section id="overview" class="py-24 px-6 bg-white border-y border-gray-100">
         <div class="max-w-6xl mx-auto">
 
-            <!-- What We Did -->
+            <!-- 我们做了什么 -->
             <div class="mb-24">
                 <div class="flex flex-col md:flex-row gap-12 items-center">
                     <div class="md:w-1/2">
@@ -113,7 +113,7 @@
                 </div>
             </div>
 
-            <!-- Why It Matters -->
+            <!-- 为什么这很重要 -->
             <div>
                 <div class="text-center mb-16">
                     <h2 class="text-3xl font-bold text-gray-900 uppercase tracking-tight">Why It Matters</h2>
@@ -153,68 +153,78 @@
         </div>
     </section>
 
-    <!-- 4. Explore Project Navigation Hub -->
+    <!-- 4. 项目导航枢纽 (已修改：点击直接跳转至独立页面) -->
     <section id="explore" class="py-24 px-6 bg-gray-50 border-b border-gray-200">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-gray-900 uppercase tracking-tight">Project Navigation Hub</h2>
                 <div class="w-20 h-1.5 bg-uob-red mx-auto mt-4 rounded-full"></div>
-                <p class="text-gray-500 mt-6 max-w-2xl mx-auto">Navigate through our research outputs or scroll down for detailed insights.</p>
+                <p class="text-gray-500 mt-6 max-w-2xl mx-auto">Navigate through our research outputs directly to each section.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                <a href="#detailed-literature" class="group p-8 bg-white rounded-3xl shadow-sm border border-gray-100 card-hover hover:border-red-100 transition-all flex flex-col">
+                <!-- 文献综述 -->
+                <a href="literature.html" class="group p-8 bg-white rounded-3xl shadow-sm border border-gray-100 card-hover hover:border-red-100 transition-all flex flex-col">
                     <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-red-600 mb-4 group-hover:scale-110 transition-transform">
                         <i data-lucide="book-open" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-lg font-bold mb-2">Literature Review</h3>
+                    <p class="text-gray-500 text-xs mb-4">Theoretical framework and identified barriers.</p>
                     <span class="text-uob-red text-xs font-bold uppercase tracking-widest mt-auto flex items-center">
-                        Explore Dimensions <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        Go to Page <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
                     </span>
                 </a>
-                <a href="#detailed-methodology" class="group p-8 bg-white rounded-3xl shadow-sm border border-gray-100 card-hover hover:border-red-100 transition-all flex flex-col">
+                <!-- 方法论 -->
+                <a href="methodology.html" class="group p-8 bg-white rounded-3xl shadow-sm border border-gray-100 card-hover hover:border-red-100 transition-all flex flex-col">
                     <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-red-600 mb-4 group-hover:scale-110 transition-transform">
                         <i data-lucide="git-merge" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-lg font-bold mb-2">Methodology</h3>
+                    <p class="text-gray-500 text-xs mb-4">NLP pipeline and research design details.</p>
                     <span class="text-uob-red text-xs font-bold uppercase tracking-widest mt-auto flex items-center">
-                        View Pipeline <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        Go to Page <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
                     </span>
                 </a>
-                <a href="#detailed-findings" class="group p-8 bg-white rounded-3xl shadow-sm border border-gray-100 card-hover hover:border-red-100 transition-all flex flex-col">
+                <!-- 研究结果 -->
+                <a href="findings.html" class="group p-8 bg-white rounded-3xl shadow-sm border border-gray-100 card-hover hover:border-red-100 transition-all flex flex-col">
                     <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-red-600 mb-4 group-hover:scale-110 transition-transform">
                         <i data-lucide="bar-chart-2" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-lg font-bold mb-2">Findings</h3>
+                    <p class="text-gray-500 text-xs mb-4">Results from data analysis and interviews.</p>
                     <span class="text-uob-red text-xs font-bold uppercase tracking-widest mt-auto flex items-center">
-                        See Results <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        Go to Page <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
                     </span>
                 </a>
-                <a href="#detailed-resources" class="group p-8 bg-white rounded-3xl shadow-sm border border-gray-100 card-hover hover:border-red-100 transition-all lg:col-start-1 lg:ml-auto lg:w-[calc(100%+1rem)] flex flex-col">
+                <!-- 资源中心 -->
+                <a href="resources.html" class="group p-8 bg-white rounded-3xl shadow-sm border border-gray-100 card-hover hover:border-red-100 transition-all lg:col-start-1 lg:ml-auto lg:w-[calc(100%+1rem)] flex flex-col">
                     <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-red-600 mb-4 group-hover:scale-110 transition-transform">
                         <i data-lucide="download" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-lg font-bold mb-2">Resources Hub</h3>
+                    <p class="text-gray-500 text-xs mb-4">Access datasets, reports, and toolkits.</p>
                     <span class="text-uob-red text-xs font-bold uppercase tracking-widest mt-auto flex items-center">
-                        Open Repository <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        Go to Page <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
                     </span>
                 </a>
-                <a href="#detailed-team" class="group p-8 bg-white rounded-3xl shadow-sm border border-gray-100 card-hover hover:border-red-100 transition-all lg:mr-auto lg:w-[calc(100%+1rem)] flex flex-col">
+                <!-- 团队 -->
+                <a href="team.html" class="group p-8 bg-white rounded-3xl shadow-sm border border-gray-100 card-hover hover:border-red-100 transition-all lg:mr-auto lg:w-[calc(100%+1rem)] flex flex-col">
                     <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-red-600 mb-4 group-hover:scale-110 transition-transform">
                         <i data-lucide="users" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-lg font-bold mb-2">Research Team</h3>
+                    <p class="text-gray-500 text-xs mb-4">Meet the interdisciplinary researchers.</p>
                     <span class="text-uob-red text-xs font-bold uppercase tracking-widest mt-auto flex items-center">
-                        Meet Researchers <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        Go to Page <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
                     </span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- 5. FIVE DETAILED SECTIONS -->
+    <!-- 5. 详细介绍部分 (保留作为首页摘要) -->
 
-    <!-- Literature (Core Dimensions) -->
+    <!-- 文献综述摘要 -->
     <section id="detailed-literature" class="py-24 px-6 bg-white border-b border-gray-100 scroll-mt-20">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
@@ -258,7 +268,7 @@
         </div>
     </section>
 
-    <!-- Methodology -->
+    <!-- 方法论摘要 -->
     <section id="detailed-methodology" class="py-24 px-6 bg-gray-900 text-white scroll-mt-20">
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col md:flex-row gap-16 items-center">
@@ -286,27 +296,6 @@
                                 <p class="text-xs leading-relaxed text-gray-400">Educational workshops led by JGI to demystify AI for students from diverse, non-technical backgrounds.</p>
                             </div>
                         </div>
-                        <div class="flex items-start">
-                            <div class="mt-1 p-2 bg-red-600/20 rounded-lg text-red-500 mr-4"><i data-lucide="bar-chart-2" class="w-4 h-4"></i></div>
-                            <div>
-                                <h4 class="font-bold text-base text-white">4. Quantitative Surveys</h4>
-                                <p class="text-xs leading-relaxed text-gray-400">Longitudinal tracking using the AILIT-S framework to measure quantitative shifts in student self-efficacy.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="mt-1 p-2 bg-red-600/20 rounded-lg text-red-500 mr-4"><i data-lucide="mic" class="w-4 h-4"></i></div>
-                            <div>
-                                <h4 class="font-bold text-base text-white">5. Qualitative Interviews</h4>
-                                <p class="text-xs leading-relaxed text-gray-400">Semi-structured sessions probing personal narratives regarding career expectations and institutional trust.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="mt-1 p-2 bg-red-600/20 rounded-lg text-red-500 mr-4"><i data-lucide="pie-chart" class="w-4 h-4"></i></div>
-                            <div>
-                                <h4 class="font-bold text-base text-white">6. Data Analysis</h4>
-                                <p class="text-xs leading-relaxed text-gray-400">Triangulation of data using reflexive thematic analysis to produce evidence-based policy roadmaps.</p>
-                            </div>
-                        </div>
                         <div class="pt-4"><a href="methodology.html" class="inline-flex items-center bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-bold hover:bg-gray-200 transition">View Full Pipeline <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i></a></div>
                     </div>
                 </div>
@@ -319,11 +308,7 @@
                             <div class="flex justify-center text-gray-600"><i data-lucide="arrow-down" class="w-4 h-4"></i></div>
                             <div class="p-2 bg-gray-900 rounded-lg border-l-4 border-red-600 text-xs italic">3. Educational Intervention (JGI)</div>
                             <div class="flex justify-center text-gray-600"><i data-lucide="arrow-down" class="w-4 h-4"></i></div>
-                            <div class="p-2 bg-gray-900 rounded-lg border-l-4 border-red-600 text-xs italic">4. Quantitative Longitudinal Surveys</div>
-                            <div class="flex justify-center text-gray-600"><i data-lucide="arrow-down" class="w-4 h-4"></i></div>
-                            <div class="p-2 bg-gray-900 rounded-lg border-l-4 border-red-600 text-xs italic">5. Qualitative Interviews</div>
-                            <div class="flex justify-center text-gray-600"><i data-lucide="arrow-down" class="w-4 h-4"></i></div>
-                            <div class="p-2 bg-gray-900 rounded-lg border-l-4 border-red-600 text-xs italic">6. Thematic & Statistical Synthesis</div>
+                            <div class="p-2 bg-gray-900 rounded-lg border-l-4 border-red-600 text-xs italic">Thematic & Statistical Synthesis</div>
                         </div>
                     </div>
                 </div>
@@ -331,7 +316,7 @@
         </div>
     </section>
 
-    <!-- Findings -->
+    <!-- 结果摘要 -->
     <section id="detailed-findings" class="py-24 px-6 bg-white scroll-mt-20 border-b border-gray-100">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold mb-16 text-center uppercase tracking-tight text-gray-900">Findings</h2>
@@ -359,101 +344,7 @@
         </div>
     </section>
 
-    <!-- Resources Hub (Simplified to 4 category boxes) -->
-    <section id="detailed-resources" class="py-24 px-6 bg-gray-50 border-y border-gray-100 scroll-mt-20">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-gray-900 uppercase tracking-tight mb-4">Resources Hub</h2>
-            <div class="w-20 h-1.5 bg-uob-red mx-auto mb-8 rounded-full"></div>
-            <p class="text-gray-500 mb-16 max-w-2xl mx-auto">Our commitment to open science includes sharing all research outputs and pedagogical instruments.</p>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-                <!-- Research Reports -->
-                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm text-left hover:shadow-md transition">
-                    <div class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center text-red-600 mb-6">
-                        <i data-lucide="file-text" class="w-5 h-5"></i>
-                    </div>
-                    <h4 class="font-bold text-gray-900 mb-2">Research Reports</h4>
-                    <p class="text-xs text-gray-500 leading-relaxed">Final Project Reports and Executive Summaries detailing our multi-year findings.</p>
-                </div>
-
-                <!-- Training Materials -->
-                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm text-left hover:shadow-md transition">
-                    <div class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center text-red-600 mb-6">
-                        <i data-lucide="graduation-cap" class="w-5 h-5"></i>
-                    </div>
-                    <h4 class="font-bold text-gray-900 mb-2">Training Materials</h4>
-                    <p class="text-xs text-gray-500 leading-relaxed">Course syllabi, lecture slides, and recruitment flyers for AI demystification workshops.</p>
-                </div>
-
-                <!-- Methodology Toolkit -->
-                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm text-left hover:shadow-md transition">
-                    <div class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center text-red-600 mb-6">
-                        <i data-lucide="clipboard-check" class="w-5 h-5"></i>
-                    </div>
-                    <h4 class="font-bold text-gray-900 mb-2">Methodology Toolkit</h4>
-                    <p class="text-xs text-gray-500 leading-relaxed">Survey instruments (AILIT-S), depth interview guides, and ethical consent bundles.</p>
-                </div>
-
-                <!-- Code & Data -->
-                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm text-left hover:shadow-md transition">
-                    <div class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center text-red-600 mb-6">
-                        <i data-lucide="code" class="w-5 h-5"></i>
-                    </div>
-                    <h4 class="font-bold text-gray-900 mb-2">Code & Data</h4>
-                    <p class="text-xs text-gray-500 leading-relaxed">Python scripts for NLP listing analysis and open-access metadata repositories.</p>
-                </div>
-            </div>
-
-            <a href="resources.html" class="inline-flex items-center px-10 py-4 bg-uob-red text-white rounded-full font-bold shadow-xl hover:scale-105 transition-all">
-                Access All Resources <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- Team -->
-    <section id="detailed-team" class="py-24 px-6 bg-white scroll-mt-20">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-4 uppercase tracking-tight text-gray-900">Research Team</h2>
-            <p class="text-gray-500 mb-16 max-w-2xl mx-auto text-sm">An interdisciplinary group from Bristol's School of Engineering and School of Sociology.</p>
-
-            <div class="mb-16">
-                <h3 class="text-xs font-bold uppercase tracking-widest text-red-600 mb-6">Principal Investigator</h3>
-                <div class="inline-block px-10 py-5 bg-white rounded-2xl shadow-sm border border-gray-200">
-                    <h4 class="font-bold text-2xl text-gray-900 mb-1">Prof. Flavia De Luca</h4>
-                    <p class="text-xs text-gray-400 font-medium uppercase tracking-tighter italic">Structural Engineering & Project Lead</p>
-                </div>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <h4 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6 text-left border-b border-gray-100 pb-2">Postgraduate Researchers</h4>
-                    <div class="grid grid-cols-2 gap-3">
-                        <div class="p-3 bg-gray-50 rounded-xl text-xs font-semibold text-gray-700 border border-gray-100">Jana Alloush</div>
-                        <div class="p-3 bg-gray-50 rounded-xl text-xs font-semibold text-gray-700 border border-gray-100">Erin Brady</div>
-                        <div class="p-3 bg-gray-50 rounded-xl text-xs font-semibold text-gray-700 border border-gray-100">Rosie Castiglione</div>
-                        <div class="p-3 bg-gray-50 rounded-xl text-xs font-semibold text-gray-700 border border-gray-100">Weilin He</div>
-                        <div class="p-3 bg-gray-50 rounded-xl text-xs font-semibold text-gray-700 border border-gray-100">Sven Hollowell</div>
-                        <div class="p-3 bg-gray-50 rounded-xl text-xs font-semibold text-gray-700 border border-gray-100">Adrianna Jezierska</div>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6 text-left border-b border-gray-100 pb-2">Training & Coordination</h4>
-                    <div class="grid grid-cols-2 gap-3">
-                        <div class="p-3 bg-gray-50 rounded-xl text-xs font-semibold text-gray-700 border border-gray-100">Pau Erola</div>
-                        <div class="p-3 bg-gray-50 rounded-xl text-xs font-semibold text-gray-700 border border-gray-100">Emily Wride</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-16">
-                <a href="team.html" class="inline-flex items-center text-sm font-bold text-uob-red hover:underline uppercase tracking-wider">
-                    Team Bios & Contacts <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
+    <!-- 页脚 -->
     <footer class="bg-gray-100 py-12 px-6 border-t border-gray-200">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 font-medium italic">
             <p>&copy; 2026 University of Bristol. Funded by EPSRC.</p>
@@ -464,7 +355,7 @@
         </div>
     </footer>
 
-    <!-- Initialize Lucide Icons -->
+    <!-- 初始化 Lucide 图标 -->
     <script>
         lucide.createIcons();
     </script>
