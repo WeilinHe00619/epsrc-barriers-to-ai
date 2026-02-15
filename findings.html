@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Findings | AI Barriers Project</title>
+    <!-- 引入 Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Lucide 图标库 -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
         .uob-red { color: #B01C2E; }
+        .text-uob-red { color: #B01C2E; }
         .bg-uob-red { background-color: #B01C2E; }
+        .border-uob-red { border-color: #B01C2E; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 leading-relaxed font-sans">
 
-
-    <!-- Navigation -->
+    <!-- 导航栏 (Updated) -->
     <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
@@ -25,7 +28,7 @@
                     <span class="font-bold text-xl tracking-tight hidden sm:block">AI Barriers Project</span>
                 </a>
             </div>
-            <!-- Updated Navigation Links: All 6 sections included -->
+            <!-- 导航链接：包含全部 6 个内容板块，Findings 高亮 -->
             <div class="hidden lg:flex space-x-8 text-sm font-semibold text-gray-600">
                 <a href="index.html" class="hover:text-red-600 transition">Home</a>
                 <a href="literature.html" class="hover:text-red-600 transition">Literature Review</a>
@@ -34,9 +37,7 @@
                 <a href="resources.html" class="hover:text-red-600 transition">Resources Hub</a>
                 <a href="team.html" class="hover:text-red-600 transition">Team</a>
             </div>
-            <a href="index.html" class="flex items-center text-sm font-bold text-gray-500 hover:text-red-600 transition">
-                <i data-lucide="arrow-left" class="w-4 h-4 mr-1"></i> Back to Home
-            </a>
+            <a href="mailto:uob-AIbarriers-project@bristol.ac.uk" class="text-xs font-bold uppercase tracking-wider bg-uob-red text-white px-5 py-2.5 rounded-full hover:bg-red-700 transition shadow-md">Contact Us</a>
         </div>
     </nav>
 
